@@ -52,7 +52,7 @@ Type the word focused
 Select Emulate a focused page from the the menu
 Now clicking around in the console will not close the element.
 
-<nav class="1" role="2"
+<nav class="" role="0"
+<nav class="" role="1"
 <nav class="1" role="1"
-<nav class="2" role="1"
-<nav class="2" role="2"
+<nav class="1" role="0"
