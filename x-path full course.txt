@@ -1,0 +1,58 @@
+locators
+1.ID 
+2.NAME
+3.CLASS NAME
+4.TAG NAME
+5.LINK TEXT
+6.PARTIAL LINK TEXT
+7.XPATH 
+8.CSS SELECTOR
+
+
+XPATH
+1.ATTRIBUTE BASED
+2.CONDITIONAL BASED
+	AND 
+	OR
+3.COLLECTIONBASED OR INDEX[n]
+4.FUNCTIONS
+	LAST()       (//TAGNAME) + [LAST()]OR(//TAGNAME) + [LAST()-0]
+	LAST()-N     (//TAGNAME) + [LAST()-N]
+	CONTAINS()    //TAGNAME[CONTAINS(@ATTRIBUTES,'ATTRI VALUE')]
+	POSITION()=N  (//TAGNAME) + [POSITION()=N]
+	POSITION()<N||>N  (//TAGNAME) + [POSITION()>1]
+5.TEXTBASED
+	CONTAINS  //TAGNAME[CONTAINS(TEXT(),'TEXT VALUE')]
+	STARTS-WITH   //TAGNAME[STARTS-WITH(TEXT(),'TEXT VALUE PARTIAL')]
+	(.=) ==== TEXT()
+	NORMALIZE-SPACE()
+6.ANCESTOR and PARENT AND CHILD
+ancestor //tagname[text()='text value']/ancestor::tagname 
+parent //tagname[@attribute name='attri value']/parent::tagname or //tagname[@attribute name='attri value']/..
+child //tagname[text()='text value']/child::tagname
+7.AXES 
+	FOLLOWING
+	FOLLOWING-SIBLINGS //tagname[text()='text value']/following-sibling::tagname
+	PRECEDING-SIBLINGS //tagname[@attribute name='attri value']/preceding-sibling::tagname
+8.WILDCARD
+		//*
+9.SVG
+//*[local-name()='svg'][@ATTRIBUTES='ATTRI VALUE']
+
+
+
+
+hidden dropdown
+================
+Do the following:
+
+Open the console and navigate to Elements tab
+Type control + shift + P (Windows)
+Type the word focused
+Select Emulate a focused page from the the menu
+Now clicking around in the console will not close the element.
+
+<nav class="1" role="2"
+<nav class="1" role="1"
+<nav class="2" role="1"
+<nav class="2" role="2"
