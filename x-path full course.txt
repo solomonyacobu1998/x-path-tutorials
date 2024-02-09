@@ -56,3 +56,8 @@ Now clicking around in the console will not close the element.
 <nav class="" role="1"
 <nav class="1" role="1"
 <nav class="1" role="0"
+
+<nav class="1" role="1"
+<nav class="1" role="2"
+<nav class="2" role="1"
+<nav class="2" role="2"
